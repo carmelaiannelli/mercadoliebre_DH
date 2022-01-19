@@ -1,0 +1,68 @@
+header{
+    background-color: #EAC926;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.centrarContenedor{
+    
+    text-align: center;
+}
+#listaDelMenu{
+    list-style-type: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    text-align: center;
+    width: 90%;
+}
+main i{
+    color: #39b54a;
+}
+.elemento{
+    margin-bottom: 10px;
+}
+
+.cajitaPrecio{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.indentado{
+    padding: 20px;
+}
+.titular{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento, .descripcion{
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
