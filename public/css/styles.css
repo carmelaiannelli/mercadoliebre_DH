@@ -1,3 +1,24 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* elementos del header */
+
+.logo{
+    margin-top: 3%;
+}
+
 header{
     background-color: #EAC926;
     text-align: center;
@@ -6,29 +27,44 @@ header{
     box-sizing: border-box;
 
 }
-.centrarContenedor{
-    
-    text-align: center;
-}
+
 #listaDelMenu{
-    list-style-type: none;
-    margin: 0 auto;
+    list-style: none;
+    margin: 0 ;
+    padding: 10px 20px 15px 20px;
     box-sizing: border-box;
     text-align: justify;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+.fa-bars{
+    padding:12px;
+    background-color: #03264C;
+    border-radius: 12%;
+    margin: 10px;
+    color:white;
+
 }
-main{
+
+/* Elementos del main*/
+
+.banner{
+    width:100%;
+}
+.centrarContenedor{
+    
+    text-align: center;
+}
+
+
+main article{
     text-align: center;
     width: 90%;
+    margin-left: 3%;
 }
-main i{
-    color: #39b54a;
-}
+
 .elemento{
     margin-bottom: 10px;
+    background-color: white;
 }
 
 .cajitaPrecio{
@@ -40,18 +76,34 @@ main i{
     font-weight: bold;
 }
 
-.indentado{
-    padding: 20px;
-}
 .titular{
     font-size: 24px;
+    color:#666;
+    margin: 5% 0px;
 }
+.fa-truck{
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;;
+    align-items: center;
+    justify-items: center;
+    color: #39b54a;
+}
+
 .precio{
     font-size: 18px;
 }
-.descuento, .descripcion{
+.descuento {
     font-size: 16px;
 }
+
+.descripcion{
+    font-size: 16px;
+    color:#666;
+}
+
+
 
 p {
     font-size: 12px;
@@ -66,3 +118,31 @@ footer i{
     margin-bottom: 10px;
     color: #03264C;
 }
+
+
+
+@media(min-width: 361px) and (max-width:768px){
+   #listaDelMenu{
+       display: none;
+   }
+    .descripcion{
+       display: none;
+   }
+}
+
+@media(min-width:769px){
+    .elemento{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); /* no se entiende si aplica a todos o solo a >769px */
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+/* 
+
+Para la sección del Header debemos:
+● Solo para la versión mobile, ocultar el site y el login navbar.
+● Para las versiones desktop y tablet mostrar el site y login navbar, pero ocultar la imagen
+del menú hamburguesa.
+*/
