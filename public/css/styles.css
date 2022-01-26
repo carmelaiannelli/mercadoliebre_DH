@@ -7,6 +7,11 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -15,9 +20,6 @@ body{
 
 /* elementos del header */
 
-.logo{
-    margin-top: 3%;
-}
 
 header{
     background-color: #EAC926;
@@ -26,6 +28,13 @@ header{
     width: 100%;
     box-sizing: border-box;
 
+}
+.logo{
+    margin-top: 3%;
+}
+.centrarContenedor{
+    
+    text-align: center;
 }
 
 #listaDelMenu{
@@ -50,38 +59,44 @@ header{
 .banner{
     width:100%;
 }
-.centrarContenedor{
-    
-    text-align: center;
-}
-
-
-main article{
-    text-align: center;
-    width: 90%;
-    margin-left: 3%;
-}
-
-.elemento{
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-.cajitaPrecio{
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-}
-
-.negrita{
-    font-weight: bold;
-}
 
 .titular{
     font-size: 24px;
     color:#666;
     margin: 5% 0px;
 }
+
+
+
+.todosLosArticulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.elemento{
+    margin-bottom: 3%;
+    background-color: white;
+    width: 350px;
+    padding: 2%;
+    box-sizing: content-box;
+}
+
+article img{
+    width: 100%;
+}
+
+
+.cajitaPrecio{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+/*
 .fa-truck{
+    /*aca no encontre la manera de que el camioncito ande
     display: flex;
     padding: 5px;
     border-radius: 50%;
@@ -89,13 +104,39 @@ main article{
     align-items: center;
     justify-items: center;
     color: #39b54a;
+} */
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precioDescuento{
+    display:flex;
+    flex-wrap: nowrap;
 }
 
 .precio{
+    display: flexbox;
     font-size: 18px;
+    width: 30%;
+    text-align: left;
 }
 .descuento {
+    display: flexbox;
     font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    text-align: left;
 }
 
 .descripcion{
@@ -105,9 +146,8 @@ main article{
 
 
 
-p {
-    font-size: 12px;
-}
+
+/* todos los elementos del footer */
 
 footer {
     text-align: center;
@@ -119,6 +159,17 @@ footer i{
     color: #03264C;
 }
 
+.negrita{
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 12px;
+}
+
+
+/*aca van mis media queries */
 
 
 @media(min-width: 361px) and (max-width:768px){
@@ -139,10 +190,3 @@ footer i{
     }
 }
 
-/* 
-
-Para la sección del Header debemos:
-● Solo para la versión mobile, ocultar el site y el login navbar.
-● Para las versiones desktop y tablet mostrar el site y login navbar, pero ocultar la imagen
-del menú hamburguesa.
-*/
