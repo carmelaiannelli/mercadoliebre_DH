@@ -24,25 +24,55 @@ body{
 header{
     background-color: #EAC926;
     text-align: center;
-    margin: auto;
+    padding: 0 3vw 0 3vw;
     width: 100%;
     box-sizing: border-box;
-
-}
-.logo{
-    margin-top: 3%;
-}
-.centrarContenedor{
-    
-    text-align: center;
 }
 
-#listaDelMenu{
-    list-style: none;
-    margin: 0 ;
-    padding: 10px 20px 15px 20px;
+.barraPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    height: 25vh;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
     box-sizing: border-box;
-    text-align: justify;
+    align-content: space-around;
+    border: 1px solid black; /*esto lo puse asi para poder guiarme en la estructura*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 5%;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.barraDeBusqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5vh;
+    background-color: white;
+    border-radius: 3px;
+    color: #666;
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5vh;
+    box-sizing: border-box;
+}
+
+.menuDesplegable{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0.5vw;
+}
+
+#menuIzq li, #menuDer li {
+    display: inline;
+    padding: 1vw;
 }
 
 .fa-bars{
@@ -63,7 +93,7 @@ header{
 .titular{
     font-size: 24px;
     color:#666;
-    margin: 5% 0px;
+    margin: 4vh;
 }
 
 
@@ -77,9 +107,9 @@ header{
 
 
 .elemento{
-    margin-bottom: 3%;
+    margin-bottom: 5vh;
     background-color: white;
-    width: 350px;
+    width: 70vw;
     padding: 2%;
     box-sizing: content-box;
 }
@@ -94,9 +124,8 @@ article img{
     padding: 15px;
 }
 
-/*
+
 .fa-truck{
-    /*aca no encontre la manera de que el camioncito ande
     display: flex;
     padding: 5px;
     border-radius: 50%;
@@ -104,7 +133,7 @@ article img{
     align-items: center;
     justify-items: center;
     color: #39b54a;
-} */
+}
 
 main section article i{
     display: block;
@@ -122,21 +151,20 @@ main section article i{
 
 .precioDescuento{
     display:flex;
-    flex-wrap: nowrap;
+    align-self: flex-start;
 }
 
+
 .precio{
-    display: flexbox;
     font-size: 18px;
-    width: 30%;
-    text-align: left;
+
 }
 .descuento {
-    display: flexbox;
     font-size: 16px;
     color: #39b54a;
-    width: 70%;
-    text-align: left;
+    display: flex;
+    position: relative;
+    left: 1vw;
 }
 
 .descripcion{
@@ -172,21 +200,43 @@ p {
 /*aca van mis media queries */
 
 
-@media(min-width: 361px) and (max-width:768px){
-   #listaDelMenu{
+@media(max-width:768px){
+
+    .menuDesplegable{
        display: none;
    }
     .descripcion{
        display: none;
    }
+
+   /*que haya un elemento por linea */
 }
 
 @media(min-width:769px){
+
+    .barraPrincipal{
+        flex-wrap: nowrap;
+    }
+
     .elemento{
         box-shadow: 0px 0px 10px rgb(100, 100, 100); /* no se entiende si aplica a todos o solo a >769px */
     }
     .burger-menu{
         display: none;
     }
+
 }
 
+@media (min-width: 769px) and (max-width:1023px){
+
+    .elemento{
+        width: 35vw;
+    }
+}
+
+@media (min-width:1024px){
+    
+    .elemento{
+        width: 18vw;
+    }
+}

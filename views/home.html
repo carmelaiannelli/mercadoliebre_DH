@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,27 +15,43 @@ rel="stylesheet" />
 </head>
 <body>
     <header>
-        <img class="logo" src="/img/logo-mercado-liebre.svg" alt="" width="25%">
-        <div> 
-            <span> lugar para poner la barra de busqueda</span>
-            <i class="fas fa-search"></i>
-        </div>
-        <div> <i class="fas fa-hand-holding-usd"></i> compra en cuotas y sin tarjeta de credito</div>
 
-        <section class="centrarContenedor">
-            <ul id="listaDelMenu">
-                <li> Ofertas</li>
-                <li>Tiendas Oficiales</li>
-                <li>Vender</li>
-                <li>Ayuda</li>
-                <li>Crea tu cuenta <i class="fas fa-user-plus"></i></li>
-                <li>Ingresa <i class="fas fa-sign-in-alt"></i></li>
-                <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
-            </ul>
+        <section class="barraPrincipal">
+            
+            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="logo ML">
+
+            <div class="barraDeBusqueda"> 
+                <div> Buscar</div>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="compraCC"> 
+                <i class="fas fa-hand-holding-usd"></i> 
+                <span> Compra en cuotas y sin tarjeta de credito</span>
+            </div>
+        </section>
+
+        <section class="listaBurger">
+            <nav class="menuDesplegable">  <STYLE>A {text-decoration: none;} A{color: black};</STYLE>
+                <div>
+                    <ul id="menuIzq">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="menuDer">
+                        <li><a href="#"> Crea tu cuenta <i class="fas fa-user-plus"> </i></a></li>
+                        <li><a href="#">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </div>    
+            </nav>
           
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </section>
 
     </header>
