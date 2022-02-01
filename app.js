@@ -11,7 +11,9 @@ app.get('/', (req,res)=>{
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 })
 
-
+app.get('/register', (req,res)=>{
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
+})
 
 app.listen(3030, () => console.log('Levantando un servidor con Express'));
 

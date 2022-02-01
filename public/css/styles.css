@@ -16,6 +16,8 @@ Verde: #39b54a;
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
 }
 
 /* elementos del header */
