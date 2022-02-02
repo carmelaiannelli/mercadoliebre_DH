@@ -39,7 +39,7 @@ header{
     padding-bottom: 3vh;
     box-sizing: border-box;
     align-content: space-around;
-    border: 1px solid black; /*esto lo puse asi para poder guiarme en la estructura*/
+    /* border: 1px solid black; esto lo puse asi para poder guiarme en la estructura*/
     justify-content: space-around;
     align-items: center;
 }
