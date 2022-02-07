@@ -74,6 +74,7 @@ header{
     width: 100%;
     height: 100%;
     border: none;
+    outline: none;
 }
 
 .barraDeBusqueda form button{
@@ -88,6 +89,10 @@ header{
     justify-content: space-between;
     text-decoration: none;
     padding: 0.5vw;
+}
+
+.listaBurger{
+    padding-bottom: 2vh;
 }
 
 #menuIzq li, #menuDer li {
