@@ -86,6 +86,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     gap: 5vw;
+    margin-top: 5vh;
 }
 
 .botonesEnvio button{
@@ -98,5 +99,9 @@ header{
     border-radius: 6px;
     text-align: center;
     box-sizing: border-box;
+    transition: all 0.8ms;
     
+}
+.botonesEnvio button:hover{
+    background-color: #0022AA;
 }

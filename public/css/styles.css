@@ -27,7 +27,7 @@ header{
     background-color: #EAC926;
     text-align: center;
     padding: 0 3vw 0 3vw;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
 }
 
@@ -42,11 +42,12 @@ header{
     /* border: 1px solid black; esto lo puse asi para poder guiarme en la estructura*/
     justify-content: space-around;
     align-items: center;
+    gap:2%;
 }
 
 
 .logo{
-    width: 25vw;
+    width: 20vw;
     box-sizing: border-box;
 }
 
@@ -131,6 +132,7 @@ header{
     width: 70vw;
     padding: 2%;
     box-sizing: content-box;
+    transition: all 2ms;
 }
 
 article img{
@@ -146,31 +148,26 @@ article img{
 
 .fa-truck{
     display: flex;
+    position: relative;
+    right: -95%;  
+    top: -30px; 
     padding: 5px;
     border-radius: 50%;
     border: 1px solid #39b54a;;
-    align-items: center;
-    justify-items: center;
     color: #39b54a;
+    transition: all 1s;
 }
 
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+.fa-truck:hover{
+    transform:rotate(-90deg);
 }
+
+
 
 .precioDescuento{
     display:flex;
     align-self: flex-start;
+    margin-bottom: 2vh;
 }
 
 
@@ -186,9 +183,19 @@ main section article i{
     left: 1vw;
 }
 
+.elemento:hover .descripcion{
+    display: block;
+    
+}
+
+.elemento:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
 .descripcion{
     font-size: 16px;
     color:#666;
+    display: none;
 }
 
 
@@ -198,6 +205,7 @@ main section article i{
 
 footer {
     text-align: center;
+    
 }
 
 footer i{
@@ -215,6 +223,10 @@ p {
     font-size: 12px;
 }
 
+.copyright{
+    margin-top: 20vh;
+    margin-bottom: 3vh;
+}
 
 /*aca van mis media queries */
 
@@ -237,9 +249,6 @@ p {
         flex-wrap: nowrap;
     }
 
-    .elemento{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100); /* no se entiende si aplica a todos o solo a >769px */
-    }
     .burger-menu{
         display: none;
     }
@@ -258,4 +267,21 @@ p {
     .elemento{
         width: 18vw;
     }
+
+    .elementosFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 3%;
+        gap: 2%;
+    }
+
+    .elementosFooter section{
+        transition: all 0.8ms;
+    }
+   
+    .elementosFooter section:hover i{
+        color: #0022AA;
+    }
+
 }
