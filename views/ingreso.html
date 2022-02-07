@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
+    <title>login</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/ingreso.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
 rel="stylesheet" />
 </head>
 <body>
+    
     <header>
 
         <section class="barraPrincipal">
@@ -56,74 +57,25 @@ rel="stylesheet" />
 
     </header>
 
-    <main>
+    <main class="formularioLogin">
 
-        <div class="title"> Completa tus datos</div>
-
-        <form action="/register" method="POST" class="formularioRegistro">
-           <div class="completar"> <input type="text" name="fullname" placeholder="Nombre y apellido"> </div>
-           <div class="completar"> <input type="text" name="username" placeholder="Nombre de usuario"> </div>
-           <div class="completar"> <input type="email" name="email" placeholder="E-mail"> </div>
-           <div class="completar"> <input type="date" name="birthday" placeholder="Fecha de Nacimiento"> </div>
-           <div class="completar"> <input type="text" name="address" placeholder="Domicilio"> </div>
-           <div class="checkmark"> <label for="profileType"> 
-               <p class="categoria"> Perfil del usuario </p>
-               <div>
-                    <span>
-                        <input type="radio" name="profileType" value="comprador" id="comprador">   
-                        <label for="comprador">Comprador</label>
-                    </span>
-                    <span>    
-                        <input type="radio" name="profileType" value="vendedor" id="vendedor">
-                        <label for="vendedor">Vendedor</label>
-                    </span>
-                </div>
-                </label> </div>
-            <div class="checkmark">
-                <label for="intereses"> 
-                    <p class="categoria">Intereses</p>
-                    <div class="inputsIntereses">
-                        <div><input type="checkbox" name="intereses" value="electro" id="electro">
-                        <label for="electro">Electro</label></div>
-
-                       <div> <input type="checkbox" name="intereses" value="moda" id="moda">
-                        <label for="moda">Moda</label></div>
-
-                        <div><input type="checkbox" name="intereses" value="hogar" id="hogar">
-                        <label for="hogar">Hogar</label></div>
-
-                        <div><input type="checkbox" name="intereses" value="jugueteria" id="jugueteria">
-                        <label for="jugueteria">Jugueteria</label></div>
-
-                       <div><input type="checkbox" name="intereses" value="vidaSana" id="vidaSana">
-                        <label for="vidaSana">Vida Sana</label></div> 
-
-                    </div>
-                </label>
-            </div>
-            <div class="checkmark"> 
-                <label for="avatar"><p class="categoria">Foto de perfil</p></label>
-                <input type="file" name="avatar" id="avatar" accept=".jpg, .png">
-            </div>
-            <div class="completar"><input type="password" name="password" placeholder="Contraseña"></div>
-            <div class="completar"><input type="password" name="password" placeholder="Confirmar contraseña"></div>
-            <div class="botonesEnvio">
-                <button type="submiy">Enviar</button>
-                <button type="delete">Reset</button>
+        <form action="/login" method="POST">
+            <div class="inputsLogin">
+                
+                <div class="completar"> <input type="text" name="username" placeholder="Nombre de usuario"> </div>
+                <div class="completar"><input type="password" name="password" placeholder="Contraseña"></div>
                 
             </div>
-
-
-
-
+            <div class="botonesEnvio">
+                <button type="submiy">Enviar</button>
+            </div>
         </form>
 
-
-
-
-
-
     </main>
+
+
+
+
 
     <footer>
         <section> 
@@ -154,12 +106,6 @@ rel="stylesheet" />
         </section>
         <br>       
     </footer>
-
-
-
-
-
-
 
 
 </body>
